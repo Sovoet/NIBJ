@@ -1,0 +1,23 @@
+import turtle
+
+pantalla = turtle.Screen()
+pantalla.bgcolor("white")
+
+
+flor = turtle.Turtle()
+flor.shape("turtle")
+flor.speed(10)
+
+
+for i in range(36):
+    flor.color("red")
+    flor.circle(100, steps=3)  # Dibujar un triángulo
+    flor.left(10)
+
+flor.color("green")
+flor.right(90)
+flor.forward(300)
+
+
+flor.hideturtle()
+turtle.done()
